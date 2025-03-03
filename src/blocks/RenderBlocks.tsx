@@ -1,5 +1,3 @@
-import React, { Fragment } from 'react'
-
 import type { Page } from '@/payload-types'
 
 import { ArchiveBlock } from '@/blocks/ArchiveBlock/Component'
@@ -25,7 +23,7 @@ export const RenderBlocks: React.FC<{
 
   if (hasBlocks) {
     return (
-      <Fragment>
+      <>
         {blocks.map((block, index) => {
           const { blockType } = block
 
@@ -43,7 +41,7 @@ export const RenderBlocks: React.FC<{
           }
           return null
         })}
-      </Fragment>
+      </>
     )
   }
 
