@@ -98,6 +98,7 @@ export const plugins: Plugin[] = [
         media: true,
       },
       // Token provided by Vercel once Blob storage is added to your Vercel project
+      clientUploads: true,
       token: process.env.BLOB_READ_WRITE_TOKEN,
     }),
   payloadCloudPlugin(),
